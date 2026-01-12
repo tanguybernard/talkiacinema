@@ -2,4 +2,9 @@
 #
 # hello.sh
 
-echo "Hello !"
+if [ -x /usr/bin/figlet ]
+then
+  figlet "Hello !"
+else
+  echo "Hello !"
+fi
