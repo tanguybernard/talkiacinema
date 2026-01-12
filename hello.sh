@@ -2,4 +2,9 @@
 #
 # hello.sh
 
-echo "Hello !"
+if [ -x /usr/bin/cowsay ]
+then
+  cowsay "Hello !"
+else
+  echo "Hello !"
+fi
